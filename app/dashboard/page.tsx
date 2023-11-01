@@ -1,6 +1,6 @@
-import { fetchRevenue } from "../lib/data";
-import RevenueChart from "../ui/dashboard/revenue-chart";
-import { lusitana } from "../ui/fonts";
+import { fetchRevenue } from "@/app/lib/data";
+import RevenueChart from "@/app/ui/dashboard/revenue-chart";
+import { lusitana } from "@/app/ui/fonts";
 
 export default async function Page() {
   const revenue = await fetchRevenue();
