@@ -1,8 +1,4 @@
-import {
-  fetchCardData,
-  fetchLatestInvoices,
-  fetchRevenue,
-} from "@/app/lib/data";
+import { fetchCardData, fetchLatestInvoices } from "@/app/lib/data";
 import RevenueChart from "@/app/ui/dashboard/revenue-chart";
 import { lusitana } from "@/app/ui/fonts";
 import LatestInvoices from "@/app/ui/dashboard/latest-invoices";
