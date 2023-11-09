@@ -1,8 +1,7 @@
 "use client"; // This is a Client Component, which means you can use event listeners and hooks.
 
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { usePathname, useSearchParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
 
 export default function Search({ placeholder }: { placeholder: string }) {
   const searchParams = useSearchParams();
