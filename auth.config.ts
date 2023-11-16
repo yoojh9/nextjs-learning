@@ -19,3 +19,7 @@ export const authConfig = {
   },
   providers: [],
 } satisfies NextAuthConfig;
+
+// for text
+// Email: user@nextmail.com
+// Password: 123456
