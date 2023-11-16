@@ -13,7 +13,7 @@ const InvoiceScheme = z.object({
   date: z.string(),
 });
 
-const formScheme = z.object({
+const FormScheme = z.object({
   id: z.string(),
   customerId: z.string({
     invalid_type_error: "Please select a customer.",
@@ -36,8 +36,8 @@ export type State = {
   message?: string | null;
 };
 
-const CreateInvoice = InvoiceScheme.omit({ id: true, date: true });
-const UpdateInvoice = InvoiceScheme.omit({ date: true, id: true });
+const CreateInvoice = FormScheme.omit({ id: true, date: true });
+const UpdateInvoice = FormScheme.omit({ date: true, id: true });
 
 export const createInvoice = async (prevState: State, formData: FormData) => {
   const validatedFields = CreateInvoice.safeParse({
